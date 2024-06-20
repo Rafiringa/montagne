@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "robotothin";
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "robotomedium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "robotolight";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "robotobold";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+$font_thin: robotothin, sans-serif;
+$font_light: robotolight, sans-serif;
+$font_medium: robotomedium, sans-serif;
+$font_bold: robotbold, sans-serif;
+$yellow1: #ffd800;
+$yellow2: #ffe347;
+$darkblue: #191b29;
+$whitetext: #ffffff;
+$whitebg: #fcfcfc;
+
+@mixin title1 {
+  font-family: $font_thin;
+  letter-spacing: 2px;
+}
+
+@mixin title2 {
+  font-family: $font_bold;
+  letter-spacing: 1px;
+}
