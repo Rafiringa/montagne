@@ -27,10 +27,38 @@ $whitebg: #fcfcfc;
 
 @mixin title1 {
   font-family: $font_thin;
-  letter-spacing: 2px;
 }
 
 @mixin title2 {
   font-family: $font_bold;
   letter-spacing: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  background: url(../images/stars.png) center/cover fixed;
+}
+
+.btn {
+  background: #ffd800;
+  border: 2px solid transparent;
+  height: 45px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: $font_bold;
+  font-weight: 700;
+  padding: 0 20px;
 }

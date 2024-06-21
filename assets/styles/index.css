@@ -13,4 +13,102 @@
 @font-face {
   font-family: "robotobold";
   src: url(../fonts/Roboto-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  background: url(../images/stars.png) center/cover fixed;
+}
+
+.btn {
+  background: #ffd800;
+  border: 2px solid transparent;
+  height: 45px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: robotbold, sans-serif;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+header {
+  border-top: 5px solid #ffd800;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: robotolight, sans-serif;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+header nav {
+  margin: 20px auto;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+header nav h3 {
+  cursor: pointer;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li {
+  padding: 10px 15px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+header nav ul li:hover {
+  background: #ffd800;
+  border-radius: 2px;
+  color: #191b29;
+  font-weight: 800;
+}
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
+}
+header .header-content h2 {
+  font-family: robotothin, sans-serif;
+  font-size: 2.3rem;
+}
+header .header-content h2:nth-child(1) {
+  font-weight: 100;
+}
+header .header-content h2:nth-child(2) {
+  font-size: 5rem;
 }/*# sourceMappingURL=index.css.map */

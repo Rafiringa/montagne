@@ -1,0 +1,57 @@
+header {
+  border-top: 5px solid $yellow1;
+  min-height: 100vh;
+  color: $whitetext;
+  font-family: $font_light;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+
+  nav {
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    h3 {
+      cursor: pointer;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        padding: 10px 15px;
+        font-size: 0.7rem;
+        cursor: pointer;
+
+        &:hover {
+          background: $yellow1;
+          border-radius: 2px;
+          color: $darkblue;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+
+    h2 {
+      @include title1;
+      font-size: 2.3rem;
+
+      &:nth-child(1) {
+        font-weight: 100;
+      }
+      &:nth-child(2) {
+        font-size: 5rem;
+      }
+    }
+  }
+}
