@@ -1,10 +1,8 @@
 header {
-  border-top: 5px solid $yellow1;
   min-height: 100vh;
   color: $whitetext;
   font-family: $font_light;
   overflow: hidden;
-  backdrop-filter: blur(4px);
 
   nav {
     margin: 20px auto;
@@ -31,6 +29,7 @@ header {
           border-radius: 2px;
           color: $darkblue;
           font-weight: 800;
+          transition: 0.5s;
         }
       }
     }
@@ -40,7 +39,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 80vh;
 
     h2 {
       @include title1;
@@ -51,6 +50,40 @@ header {
       }
       &:nth-child(2) {
         font-size: 5rem;
+      }
+    }
+
+    form {
+      margin: 50px auto;
+
+      input[type="text"]:focus {
+        outline: none;
+        border: 1px solid rgba(255, 255, 255);
+      }
+
+      input[type="text"] {
+        background: none;
+        border: 1px solid rgba(255, 255, 255, 0.363);
+        border-radius: 4px;
+        height: 45px;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $whitetext;
+        transition: 0.5s ease;
+
+        &::placeholder {
+          color: $whitetext;
+          opacity: 0.7;
+          text-transform: uppercase;
+        }
+      }
+      input[type="button"] {
+        transition: 0.5s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
       }
     }
   }

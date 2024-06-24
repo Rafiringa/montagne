@@ -26,15 +26,20 @@ li {
 }
 
 body {
+  border-top: 5px solid #ffd800;
   text-align: center;
   max-width: 1300px;
   margin: 0 auto;
   background: url(../images/stars.png) center/cover fixed;
+  overflow-x: hidden;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .btn {
   background: #ffd800;
   border: 2px solid transparent;
+  border-radius: 4px;
   height: 45px;
   text-transform: uppercase;
   cursor: pointer;
@@ -45,13 +50,10 @@ body {
 }
 
 header {
-  border-top: 5px solid #ffd800;
   min-height: 100vh;
   color: #ffffff;
   font-family: robotolight, sans-serif;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
 }
 header nav {
   margin: 20px auto;
@@ -85,6 +87,8 @@ header nav ul li:hover {
   border-radius: 2px;
   color: #191b29;
   font-weight: 800;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 header .header-content {
   display: -webkit-box;
@@ -100,7 +104,7 @@ header .header-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 50vh;
+  min-height: 80vh;
 }
 header .header-content h2 {
   font-family: robotothin, sans-serif;
@@ -111,4 +115,72 @@ header .header-content h2:nth-child(1) {
 }
 header .header-content h2:nth-child(2) {
   font-size: 5rem;
+}
+header .header-content form {
+  margin: 50px auto;
+}
+header .header-content form input[type=text]:focus {
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+header .header-content form input[type=text] {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.363);
+  border-radius: 4px;
+  height: 45px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+header .header-content form input[type=text]::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+header .header-content form input[type=text]::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+header .header-content form input[type=text]:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+header .header-content form input[type=text]::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+header .header-content form input[type=text]::placeholder {
+  color: #ffffff;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+header .header-content form input[type=button] {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+header .header-content form input[type=button]:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+main #services {
+  background: #191b29;
+}
+main #services .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  color: #ffffff;
+}
+main #services .container .image_container img {
+  width: 100%;
+  margin-top: -120px;
+  z-index: 100;
 }/*# sourceMappingURL=index.css.map */
