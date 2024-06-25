@@ -36,10 +36,17 @@ body {
           backdrop-filter: blur(4px);
 }
 
+p {
+  font-family: robotolight, sans-serif;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
 .btn {
   background: #ffd800;
   border: 2px solid transparent;
-  border-radius: 4px;
+  border-radius: 3px;
   height: 45px;
   text-transform: uppercase;
   cursor: pointer;
@@ -107,7 +114,7 @@ header .header-content {
   min-height: 80vh;
 }
 header .header-content h2 {
-  font-family: robotothin, sans-serif;
+  font-family: robotolight, sans-serif;
   font-size: 2.3rem;
 }
 header .header-content h2:nth-child(1) {
@@ -171,6 +178,7 @@ header .header-content form input[type=button]:hover {
 
 main #services {
   background: #191b29;
+  padding-bottom: 60px;
 }
 main #services .container {
   max-width: 800px;
@@ -183,4 +191,141 @@ main #services .container .image_container img {
   width: 100%;
   margin-top: -120px;
   z-index: 100;
+}
+main #services .container .text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  margin: 60px 40px;
+}
+main #services .container .text_container .titre {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 20px;
+}
+main #services .container .text_container .titre i {
+  font-size: 2rem;
+  color: #ffd800;
+}
+main #services .container .text_container .titre h3 {
+  font-family: robotolight, sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin: 5px 10px;
+}
+main #services .container .text_container p {
+  opacity: 0.5;
+}
+main #team {
+  background: #ffd800;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+main #team .container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+main #team .container h2 {
+  font-family: robotolight, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 2rem;
+}
+main #team .container h3 {
+  font-family: robotbold, sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 60px;
+}
+main #team .container .card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  -webkit-column-gap: 4%;
+     -moz-column-gap: 4%;
+          column-gap: 4%;
+  text-align: center;
+}
+main #team .container .card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main #team .container .card-container .card .img-container {
+  height: 80px;
+  width: 80px;
+  border-radius: 250px;
+  background: #fcfcfc;
+  border: 5px solid #191b29;
+  margin-bottom: 20px;
+}
+main #team .container .card-container .card h4 {
+  font-family: robotbold, sans-serif;
+  margin-bottom: 15px;
+}
+main #team .container .card-container .card p {
+  opacity: 0.8;
+}
+main #app {
+  position: relative;
+}
+main #app::before {
+  content: url(../images/MacBook\ Gold.png);
+  min-height: 100px;
+  position: absolute;
+}
+main #app .container {
+  max-width: 730px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+main #app .container h4 {
+  font-family: robotbold, sans-serif;
+  margin-bottom: 10px;
+}
+main #app .container p {
+  text-align: left;
+  max-width: 300px;
+}
+main #app #app1 {
+  background: #ffe347;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #app2 {
+  background: #fcfcfc;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+main #app2 p {
+  margin-bottom: 20px;
+}
+main #app2 .btn {
+  background: #191b29;
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */
