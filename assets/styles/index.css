@@ -286,9 +286,13 @@ main #app {
   position: relative;
 }
 main #app::before {
-  content: url(../images/MacBook\ Gold.png);
-  min-height: 100px;
+  content: "";
+  height: 500px;
+  width: 600px;
+  background: url(../images/MacBook\ Gold.png) center/cover;
   position: absolute;
+  z-index: 200;
+  right: 0;
 }
 main #app .container {
   max-width: 730px;
@@ -320,7 +324,7 @@ main #app #app1 {
 main #app2 {
   background: #fcfcfc;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 main #app2 p {
   margin-bottom: 20px;
