@@ -332,4 +332,93 @@ main #app2 p {
 main #app2 .btn {
   background: #191b29;
   color: #ffffff;
+}
+main #works {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+main #works .container {
+  max-width: 730px;
+  margin: 0 auto;
+}
+main #works .container h2,
+main #works .container h3,
+main #works .container h4,
+main #works .container p {
+  color: #ffffff;
+}
+main #works .container h2 {
+  font-family: robotolight, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 2rem;
+}
+main #works .container h3 {
+  font-family: robotbold, sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 60px;
+}
+main #works .container .card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  -webkit-column-gap: 4%;
+     -moz-column-gap: 4%;
+          column-gap: 4%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+main #works .container .card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main #works .container .card-container .card .icone {
+  margin-bottom: 20px;
+}
+main #works .container .card-container .card .icone i {
+  color: #ffd800;
+  font-size: 3rem;
+}
+main #works .container .card-container .card h4 {
+  font-family: robotbold, sans-serif;
+  margin-bottom: 15px;
+}
+main #works .container .card-container .card p {
+  opacity: 0.8;
+}
+
+footer {
+  background: #191b29;
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+footer .container {
+  max-width: 730px;
+  margin: 0 auto;
+}
+footer .container #list {
+  display: grid;
+  grid-template-columns: repeat(4, 10%);
+  -webkit-column-gap: 20%;
+     -moz-column-gap: 20%;
+          column-gap: 20%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+footer .container #list p {
+  opacity: 1;
+}
+footer .container p {
+  opacity: 0.4;
 }/*# sourceMappingURL=index.css.map */
