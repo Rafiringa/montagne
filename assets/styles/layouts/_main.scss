@@ -1,7 +1,6 @@
 main {
   #services {
     background: $darkblue;
-    padding-bottom: 60px;
 
     .container {
       max-width: 800px;
@@ -9,8 +8,18 @@ main {
       display: grid;
       grid-template-columns: 35% 30% 35%;
       color: $whitetext;
+      @media screen and (max-width: 806px) {
+        grid-template-columns: 50% 50%;
+      }
+      @media screen and (max-width: 540px) {
+        padding-top: 5px;
+        display: block;
+      }
 
       .image_container {
+        @media screen and (max-width: 806px) {
+          display: none;
+        }
         img {
           width: 100%;
           margin-top: -120px;
@@ -24,25 +33,32 @@ main {
         justify-content: space-between;
         text-align: left;
         margin: 60px 40px;
-
-        .titre {
-          display: grid;
-          grid-template-columns: 20% 80%;
-          margin-bottom: 20px;
-
-          i {
-            font-size: 2rem;
-            color: $yellow1;
-          }
-          h3 {
-            @include title1;
-            font-weight: lighter;
-            font-size: 1.2rem;
-            margin: 5px 10px;
-          }
+        @media screen and (max-width: 540px) {
+          margin: 20px 40px 0;
         }
-        p {
-          opacity: 0.5;
+
+        .text {
+          margin-bottom: 40px;
+
+          .titre {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin-bottom: 20px;
+
+            i {
+              font-size: 2rem;
+              color: $yellow1;
+            }
+            h3 {
+              @include title1;
+              font-weight: lighter;
+              font-size: 1.2rem;
+              margin: 5px 10px;
+            }
+          }
+          p {
+            opacity: 0.5;
+          }
         }
       }
     }
@@ -73,20 +89,47 @@ main {
         grid-template-columns: repeat(4, 22%);
         column-gap: 4%;
         text-align: center;
+        @media screen and (max-width: 480px) {
+          display: block;
+        }
 
         .card {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 480px) {
+            margin-bottom: 20px;
+          }
 
           .img-container {
             height: 80px;
             width: 80px;
             border-radius: 250px;
             background: $whitebg;
-            border: 5px solid $darkblue;
+            // border: 5px solid $darkblue;
             margin-bottom: 20px;
+
+            #img1 {
+              width: 100%;
+              height: 100%;
+              background: url(../images/Layer\ 4\ copy\ 3.png) center/cover;
+            }
+            #img2 {
+              width: 100%;
+              height: 100%;
+              background: url(../images/Layer\ 6.png) center/cover;
+            }
+            #img3 {
+              width: 100%;
+              height: 100%;
+              background: url(../images/Layer\ 7.png) center/cover;
+            }
+            #img4 {
+              width: 100%;
+              height: 100%;
+              background: url(../images/Layer\ 8.png) center/cover;
+            }
           }
           h4 {
             @include title2;
@@ -111,6 +154,10 @@ main {
       position: absolute;
       z-index: 200;
       right: 0;
+
+      @media screen and (max-width: 920px) {
+        display: none;
+      }
     }
 
     .container {
@@ -120,6 +167,9 @@ main {
       display: flex;
       flex-direction: column;
       align-items: start;
+      @media screen and (max-width: 920px) {
+        padding-left: 30px;
+      }
 
       h4 {
         @include title2;
@@ -182,12 +232,18 @@ main {
         column-gap: 4%;
         text-align: center;
         margin-bottom: 40px;
+        @media screen and (max-width: 480px) {
+          display: block;
+        }
 
         .card {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 480px) {
+            margin-bottom: 20px;
+          }
 
           .icone {
             margin-bottom: 20px;

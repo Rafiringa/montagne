@@ -10,14 +10,21 @@ header {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+    @media screen and (max-width: 806px) {
+      margin: 20px 20px;
+    }
 
     h3 {
       cursor: pointer;
+      justify-content: center;
     }
 
     ul {
       display: flex;
       align-items: center;
+      @media screen and (max-width: 580px) {
+        display: none;
+      }
 
       li {
         padding: 10px 15px;
@@ -47,9 +54,15 @@ header {
 
       &:nth-child(1) {
         font-weight: 100;
+        @media screen and (max-width: 806px) {
+          font-size: 1.5rem;
+        }
       }
       &:nth-child(2) {
         font-size: 5rem;
+        @media screen and (max-width: 806px) {
+          font-size: 2.5rem;
+        }
       }
     }
 
@@ -71,6 +84,11 @@ header {
         padding-right: 10px;
         color: $whitetext;
         transition: 0.5s ease;
+        @media screen and (max-width: 520px) {
+          display: block;
+          width: 100%;
+          margin: 5px auto;
+        }
 
         &::placeholder {
           color: $whitetext;
@@ -80,6 +98,11 @@ header {
       }
       input[type="button"] {
         transition: 0.5s ease;
+        @media screen and (max-width: 520px) {
+          display: block;
+          width: 100%;
+          margin: 5px auto;
+        }
 
         &:hover {
           transform: scale(1.03);

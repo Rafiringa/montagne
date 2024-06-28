@@ -73,8 +73,16 @@ header nav {
           justify-content: space-between;
   text-transform: uppercase;
 }
+@media screen and (max-width: 806px) {
+  header nav {
+    margin: 20px 20px;
+  }
+}
 header nav h3 {
   cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header nav ul {
   display: -webkit-box;
@@ -83,6 +91,11 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 580px) {
+  header nav ul {
+    display: none;
+  }
 }
 header nav ul li {
   padding: 10px 15px;
@@ -120,8 +133,18 @@ header .header-content h2 {
 header .header-content h2:nth-child(1) {
   font-weight: 100;
 }
+@media screen and (max-width: 806px) {
+  header .header-content h2:nth-child(1) {
+    font-size: 1.5rem;
+  }
+}
 header .header-content h2:nth-child(2) {
   font-size: 5rem;
+}
+@media screen and (max-width: 806px) {
+  header .header-content h2:nth-child(2) {
+    font-size: 2.5rem;
+  }
 }
 header .header-content form {
   margin: 50px auto;
@@ -141,6 +164,13 @@ header .header-content form input[type=text] {
   color: #ffffff;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+@media screen and (max-width: 520px) {
+  header .header-content form input[type=text] {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+  }
 }
 header .header-content form input[type=text]::-webkit-input-placeholder {
   color: #ffffff;
@@ -171,6 +201,13 @@ header .header-content form input[type=button] {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+@media screen and (max-width: 520px) {
+  header .header-content form input[type=button] {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+  }
+}
 header .header-content form input[type=button]:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
@@ -178,7 +215,6 @@ header .header-content form input[type=button]:hover {
 
 main #services {
   background: #191b29;
-  padding-bottom: 60px;
 }
 main #services .container {
   max-width: 800px;
@@ -186,6 +222,22 @@ main #services .container {
   display: grid;
   grid-template-columns: 35% 30% 35%;
   color: #ffffff;
+}
+@media screen and (max-width: 806px) {
+  main #services .container {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 540px) {
+  main #services .container {
+    padding-top: 5px;
+    display: block;
+  }
+}
+@media screen and (max-width: 806px) {
+  main #services .container .image_container {
+    display: none;
+  }
 }
 main #services .container .image_container img {
   width: 100%;
@@ -206,22 +258,30 @@ main #services .container .text_container {
   text-align: left;
   margin: 60px 40px;
 }
-main #services .container .text_container .titre {
+@media screen and (max-width: 540px) {
+  main #services .container .text_container {
+    margin: 20px 40px 0;
+  }
+}
+main #services .container .text_container .text {
+  margin-bottom: 40px;
+}
+main #services .container .text_container .text .titre {
   display: grid;
   grid-template-columns: 20% 80%;
   margin-bottom: 20px;
 }
-main #services .container .text_container .titre i {
+main #services .container .text_container .text .titre i {
   font-size: 2rem;
   color: #ffd800;
 }
-main #services .container .text_container .titre h3 {
+main #services .container .text_container .text .titre h3 {
   font-family: robotolight, sans-serif;
   font-weight: lighter;
   font-size: 1.2rem;
   margin: 5px 10px;
 }
-main #services .container .text_container p {
+main #services .container .text_container .text p {
   opacity: 0.5;
 }
 main #team {
@@ -252,6 +312,11 @@ main #team .container .card-container {
           column-gap: 4%;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  main #team .container .card-container {
+    display: block;
+  }
+}
 main #team .container .card-container .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,13 +332,37 @@ main #team .container .card-container .card {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  main #team .container .card-container .card {
+    margin-bottom: 20px;
+  }
+}
 main #team .container .card-container .card .img-container {
   height: 80px;
   width: 80px;
   border-radius: 250px;
   background: #fcfcfc;
-  border: 5px solid #191b29;
   margin-bottom: 20px;
+}
+main #team .container .card-container .card .img-container #img1 {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Layer\ 4\ copy\ 3.png) center/cover;
+}
+main #team .container .card-container .card .img-container #img2 {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Layer\ 6.png) center/cover;
+}
+main #team .container .card-container .card .img-container #img3 {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Layer\ 7.png) center/cover;
+}
+main #team .container .card-container .card .img-container #img4 {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Layer\ 8.png) center/cover;
 }
 main #team .container .card-container .card h4 {
   font-family: robotbold, sans-serif;
@@ -294,6 +383,11 @@ main #app::before {
   z-index: 200;
   right: 0;
 }
+@media screen and (max-width: 920px) {
+  main #app::before {
+    display: none;
+  }
+}
 main #app .container {
   max-width: 730px;
   margin: 0 auto;
@@ -307,6 +401,11 @@ main #app .container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+@media screen and (max-width: 920px) {
+  main #app .container {
+    padding-left: 30px;
+  }
 }
 main #app .container h4 {
   font-family: robotbold, sans-serif;
@@ -367,6 +466,11 @@ main #works .container .card-container {
   text-align: center;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 480px) {
+  main #works .container .card-container {
+    display: block;
+  }
+}
 main #works .container .card-container .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,6 +485,11 @@ main #works .container .card-container .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 480px) {
+  main #works .container .card-container .card {
+    margin-bottom: 20px;
+  }
 }
 main #works .container .card-container .card .icone {
   margin-bottom: 20px;
@@ -416,7 +525,20 @@ footer .container #list {
   text-align: center;
   margin-bottom: 40px;
 }
-footer .container #list p {
+@media screen and (max-width: 760px) {
+  footer .container #list {
+    grid-template-columns: repeat(4, 20%);
+    -webkit-column-gap: 5%;
+       -moz-column-gap: 5%;
+            column-gap: 5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .container #list {
+    display: none;
+  }
+}
+footer .container #list .text-list p {
   opacity: 1;
 }
 footer .container p {
