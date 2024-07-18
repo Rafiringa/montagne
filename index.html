@@ -16,17 +16,34 @@
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
+    <div id="side-bar">
+      <i class="fas fa-xmark"></i>
+      <!-- <div class="toggle-btn" id="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> -->
+
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="#services">about us</a></li>
+        <li><a href="#team">our team</a></li>
+        <li><a href="#app">portfolio</a></li>
+        <li><a href="#works">contact</a></li>
+      </ul>
+    </div>
     <header>
-      <nav>
+      <nav id="navbar">
         <h3>uranos</h3>
         <ul>
-          <li>home</li>
-          <li>about us</li>
-          <li>our team</li>
-          <li>portfolio</li>
-          <li>contact</li>
+          <li><a href="">home</a></li>
+          <li><a href="#services">about us</a></li>
+          <li><a href="#team">our team</a></li>
+          <li><a href="#app">portfolio</a></li>
+          <li><a href="#works">contact</a></li>
         </ul>
       </nav>
+
       <section class="header-content">
         <h2>Discover the wold of awsome</h2>
         <h2>together</h2>
@@ -63,7 +80,11 @@
             </div>
           </div>
           <div class="image_container">
-            <img src="./assets/images/phone.png" alt="image phone" />
+            <img
+              src="./assets/images/phone.png"
+              alt="image phone"
+              id="imgPhone"
+            />
           </div>
           <div class="text_container">
             <div class="text">
@@ -244,5 +265,6 @@
         </p>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

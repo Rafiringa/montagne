@@ -2,18 +2,17 @@ header {
   min-height: 100vh;
   color: $whitetext;
   font-family: $font_light;
-  overflow: hidden;
+  overflow-x: hidden;
 
-  nav {
-    margin: 20px auto;
-    max-width: 800px;
+  #navbar {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+    margin: 20px auto;
+    max-width: 800px;
     @media screen and (max-width: 806px) {
       margin: 20px 20px;
     }
-
     h3 {
       cursor: pointer;
       justify-content: center;
@@ -26,10 +25,12 @@ header {
         display: none;
       }
 
-      li {
+      a {
         padding: 10px 15px;
         font-size: 0.7rem;
         cursor: pointer;
+        color: $whitetext;
+        text-decoration: none;
 
         &:hover {
           background: $yellow1;
@@ -41,6 +42,7 @@ header {
       }
     }
   }
+
   .header-content {
     display: flex;
     flex-direction: column;

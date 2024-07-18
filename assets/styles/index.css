@@ -14,6 +14,10 @@
   font-family: "robotobold";
   src: url(../fonts/Roboto-Bold.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,15 +39,55 @@ body {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
-
-p {
+body #side-bar {
+  position: absolute;
+  width: 200px;
+  height: 100lvh;
+  background: #191b29;
+  opacity: 0.8;
+  top: 0;
+  right: 0;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  z-index: 4000;
+}
+body #side-bar i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+body #side-bar ul {
+  margin-top: 100px;
+  text-align: left;
+}
+body #side-bar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 5px;
+  color: #ffffff;
+  font-family: robotolight, sans-serif;
+  margin-bottom: 40px;
+}
+body #side-bar ul li a:hover {
+  color: #191b29;
+}
+body #side-bar ul li:hover {
+  background: #ffd800;
+  color: #191b29;
+}
+body p {
   font-family: robotolight, sans-serif;
   font-size: 0.7rem;
   font-weight: lighter;
   line-height: 20px;
 }
-
-.btn {
+body .btn {
   background: #ffd800;
   border: 2px solid transparent;
   border-radius: 3px;
@@ -60,11 +104,9 @@ header {
   min-height: 100vh;
   color: #ffffff;
   font-family: robotolight, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
-header nav {
-  margin: 20px auto;
-  max-width: 800px;
+header #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,19 +114,21 @@ header nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: uppercase;
+  margin: 20px auto;
+  max-width: 800px;
 }
 @media screen and (max-width: 806px) {
-  header nav {
+  header #navbar {
     margin: 20px 20px;
   }
 }
-header nav h3 {
+header #navbar h3 {
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-header nav ul {
+header #navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,16 +137,18 @@ header nav ul {
           align-items: center;
 }
 @media screen and (max-width: 580px) {
-  header nav ul {
+  header #navbar ul {
     display: none;
   }
 }
-header nav ul li {
+header #navbar ul a {
   padding: 10px 15px;
   font-size: 0.7rem;
   cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
 }
-header nav ul li:hover {
+header #navbar ul a:hover {
   background: #ffd800;
   border-radius: 2px;
   color: #191b29;
@@ -239,10 +285,15 @@ main #services .container {
     display: none;
   }
 }
-main #services .container .image_container img {
+main #services .container .image_container #imgPhone {
   width: 100%;
   margin-top: -120px;
   z-index: 100;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 main #services .container .text_container {
   display: -webkit-box;

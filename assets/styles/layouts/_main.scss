@@ -20,10 +20,13 @@ main {
         @media screen and (max-width: 806px) {
           display: none;
         }
-        img {
+        #imgPhone {
           width: 100%;
           margin-top: -120px;
           z-index: 100;
+          opacity: 0;
+          transform: translateY(100px);
+          transition: 0.5s ease-in-out;
         }
       }
 

@@ -33,6 +33,34 @@ $whitebg: #fcfcfc;
   font-family: $font_bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+// .mouse {
+//   position: absolute;
+//   z-index: 1000;
+//   border-radius: 350px;
+//   transform: translate(-50%, -50%);
+//   mix-blend-mode: difference;
+// }
+// #mouse0 {
+//   background: $yellow1;
+//   width: 10px;
+//   height: 10px;
+// }
+// #mouse1 {
+//   background: $whitebg;
+//   width: 50px;
+//   height: 50px;
+//   transition: 0.15s ease-out;
+// }
+// #mouse2 {
+//   background: $darkblue;
+//   width: 100px;
+//   height: 100px;
+//   transition: 0.25s ease-out;
+// }
+
 * {
   margin: 0;
   padding: 0;
@@ -51,24 +79,71 @@ body {
   background: url(../images/stars.png) center/cover fixed;
   overflow-x: hidden;
   backdrop-filter: blur(4px);
-}
 
-p {
-  @include title1;
-  font-size: 0.7rem;
-  font-weight: lighter;
-  line-height: 20px;
-}
+  #side-bar {
+    position: absolute;
+    width: 200px;
+    height: 100lvh;
+    background: $darkblue;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
+    transition: 0.5s ease-out;
+    z-index: 4000;
 
-.btn {
-  background: #ffd800;
-  border: 2px solid transparent;
-  border-radius: 3px;
-  height: 45px;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-family: $font_bold;
-  font-weight: 700;
-  padding: 0 20px;
+    i {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 2rem;
+      color: $whitetext;
+      cursor: pointer;
+    }
+    ul {
+      margin-top: 100px;
+      text-align: left;
+
+      li {
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          list-style: none;
+          font-size: 2rem;
+          cursor: pointer;
+          padding-left: 5px;
+          color: $whitetext;
+          @include title1;
+          margin-bottom: 40px;
+
+          &:hover {
+            color: $darkblue;
+          }
+        }
+        &:hover {
+          background: $yellow1;
+          color: $darkblue;
+        }
+      }
+    }
+  }
+
+  p {
+    @include title1;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    line-height: 20px;
+  }
+
+  .btn {
+    background: #ffd800;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: $font_bold;
+    font-weight: 700;
+    padding: 0 20px;
+  }
 }
